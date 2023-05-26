@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700&display=swap"); */
 /* line 1, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_extends.scss */
 .btn_1, .btn_2, .regervation_part .btn_2:hover {
   background-image: -webkit-linear-gradient(to right, #649bff, #0070fa, #649bff);
@@ -185,7 +185,7 @@ a:hover {
 /* line 87, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_common.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #242429;
-  font-family: "Playfair Display", serif;
+  font-family: serif;
 }
 
 /* line 91, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_common.scss */
@@ -293,7 +293,7 @@ a:focus, .button:focus, button:focus, .btn:focus {
 /* line 156, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_common.scss */
 .section_tittle h2 {
   font-size: 48px;
-  color: #242429;
+  color: rgb(0, 99, 220);
   line-height: 40px;
   font-weight: 700;
   position: relative;
@@ -510,7 +510,7 @@ ul {
   text-transform: capitalize;
   border: 1px solid #e4e6ea;
   border-radius: 2px;
-  font-family: "Playfair Display", serif;
+  font-family: serif;
   background-size: 200% auto;
 }
 
@@ -2324,9 +2324,9 @@ ul {
 /* line 61, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_menu.scss */
 .main_menu .main-menu-item ul li .nav-link {
   color: #242429;
-  font-size: 14px;
+  font-size: 18px;
   padding: 38px 23px;
-  font-family: "Playfair Display", serif;
+  font-family: serif;
   line-height: 13px;
   text-transform: capitalize;
 }
@@ -2340,7 +2340,8 @@ ul {
 
 /* line 72, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_menu.scss */
 .main_menu .main-menu-item ul li .nav-link:hover {
-  color: #0065e1;
+  color: rgb(0, 115, 255);
+  font-weight: bold;
 }
 
 /* line 81, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_menu.scss */
@@ -2423,6 +2424,7 @@ ul {
   /* line 163, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_menu.scss */
   .navbar-nav {
     align-items: start !important;
+    padding: 10px;
   }
   /* line 168, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_menu.scss */
   .dropdown .dropdown-menu {
@@ -2494,6 +2496,10 @@ ul {
 
 /**************** banner part css start ****************/
 /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_banner.scss */
+.top_name img {
+  display: none;
+}
+
 .top_name h1{
   margin-top: 150px;
   justify-content: center;
@@ -2502,6 +2508,34 @@ ul {
   font-weight:bolder;
   font-size: 60px;
   text-align: center;
+  color: rgb(0, 99, 220);
+}
+
+.top_name h3{
+  justify-content: center;
+  text-transform: capitalize;
+  font-weight:bolder;
+  text-align: center;
+  color: rgb(0, 115, 255);
+}
+
+@media (max-width: 576px) {
+  .top_name img {
+    position: relative;
+    top: 200px;
+    transform: translate(70%, -50%);
+    display: block;
+  }
+  
+.top_name h1{
+  margin-top: 200px;
+}
+  .header_img {
+    display: none;
+  }
+  .banner_text_iner {
+    display: none;
+  }
 }
 
 .banner_img {
@@ -2598,20 +2632,9 @@ ul {
   }
 }
 
-/* line 63, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_banner.scss */
-.banner_part .banner_text h5 {
-  font-size: 14px;
-  text-transform: capitalize;
-  font-weight: 500;
-  color: #242429;
-  margin-bottom: 0;
-  font-family: "Roboto", sans-serif;
-}
-
 /* line 72, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_banner.scss */
 .banner_part .banner_text h1 {
   font-size: 50px;
-  text-transform: capitalize;
   font-weight: 700;
   margin-bottom: 12px;
   line-height: 1.2;
@@ -2756,12 +2779,14 @@ ul {
   font-weight: 600;
   margin-bottom: 24px;
   position: relative;
+  color: rgb(0, 99, 220);
 }
 
 @media (max-width: 991px) {
   /* line 33, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_about_us.scss */
   .about_us .about_us_text h2 {
     font-size: 22px;
+    text-align: center;
     margin-bottom: 10px;
     line-height: 35px;
     margin-top: 15px;
@@ -2789,6 +2814,7 @@ ul {
   /* line 53, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_about_us.scss */
   .about_us .about_us_text p {
     margin-bottom: 10px;
+    text-align: justify;
   }
 }
 
@@ -2845,7 +2871,7 @@ ul {
   color: #242429;
   width: 50%;
   float: left;
-  font-family: "Playfair Display", serif;
+  font-family: serif;
   position: relative;
   padding-left: 29px;
 }
@@ -2999,24 +3025,6 @@ ul {
 }
 
 /**************** service_part css start ****************/
-/* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_feature_part.scss */
-.feature_part {
-  padding: 140px 0 515px;
-}
-
-@media (max-width: 991px) {
-  /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_feature_part.scss */
-  .feature_part {
-    padding: 70px 0;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_feature_part.scss */
-  .feature_part {
-    padding: 80px 0 150px;
-  }
-}
 
 /* line 13, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_feature_part.scss */
 .feature_part .section_tittle {
@@ -3373,7 +3381,7 @@ ul {
 /* line 59, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_review.scss */
 .review_part .client_review_single .client_review_text p {
   font-size: 18px;
-  font-family: "Playfair Display", serif;
+  font-family: serif;
   color: #fff;
   line-height: 1.9;
 }
@@ -3437,7 +3445,7 @@ ul {
 
 /* line 109, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_review.scss */
 .review_part h4 span {
-  font-family: "Playfair Display", serif;
+  font-family: serif;
   font-size: 14px;
   color: #fff;
   font-weight: 400;
@@ -3627,7 +3635,7 @@ ul {
 .regervation_part .btn_2 {
   margin-top: 10px;
   background-color: #fff !important;
-  font-family: "Playfair Display", serif;
+  font-family: serif;
   font-weight: 500;
   color: #242429;
   font-size: 14px;
@@ -4149,6 +4157,7 @@ ul {
 .footer-area .copyright_part {
   background-color: #0d1820;
   padding: 26px 0px;
+  text-align: center;
 }
 
 /* line 162, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_footer.scss */
@@ -5770,7 +5779,7 @@ h1, h2, h3, h4, h5, h6 {
 .blog_part .blog_btn {
   font-size: 14px;
   text-transform: uppercase;
-  font-family: "Playfair Display", serif;
+  font-family: serif;
   font-weight: 500;
   margin-top: 20px;
   display: inline-block;
@@ -6064,7 +6073,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 10, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_footer.scss */
 .footer-area .single-footer-widget p {
-  color: #7b838a;
+  color: #000000;
 }
 
 /* line 14, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_footer.scss */
@@ -6087,6 +6096,7 @@ h1, h2, h3, h4, h5, h6 {
   /* line 14, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_footer.scss */
   .footer-area .single-footer-widget h4 {
     margin-bottom: 15px;
+    text-align: left !important;
   }
 }
 
@@ -6267,4 +6277,199 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+
+/* products and services css */
+
+.lightcasestudies .col-md-4 {
+  margin: 15px 0;
+}
+
+.lightcasestudies .case-box {
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #ededed;
+  position: relative;
+}
+
+.lightcasestudies .case-box h4 {
+  color: #232323;
+}
+
+.lightcasestudies .case-box small {
+  color: #787878;
+}
+
+.lightcasestudies .case-link {
+  background-color: #fff;
+  border-color: #eee;
+}
+
+.lightcasestudies .case-box:hover {
+  border: 1px solid #ededed;
+  background: #ffffff !important
+}
+
+.lightcasestudies .case-box:hover .case-link i {
+  color: #3ac5c8;
+}
+
+.lightcasestudies .case-box:hover .case-link {
+  border-color: #3ac5c8;
+}
+
+.case-box {
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  background-color: #151515;
+}
+
+.case-single .case-box {
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+.withhover .case-box {
+  border-radius: 0 !important;
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+.case-box:hover .magnifier {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  left: 0;
+}
+
+.case-box h4 {
+  color: #ffffff;
+  padding: 16px 0 0;
+  margin: 0;
+}
+
+.case-box:hover .case-link {
+  border-color: #fff;
+}
+
+.case-box:hover .case-link a {
+  color: #ffffff !important;
+}
+
+.case-box small {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.case-box:hover {
+  border: 0;
+  color: #ffffff;
+  background: #3ac5c8;
+  background: -moz-linear-gradient(45deg, #3ac5c8 1%, #0b509e 100%);
+  background: -webkit-linear-gradient(45deg, #3ac5c8 1%, #0b509e 100%);
+  background: linear-gradient(45deg, #3ac5c8 1%, #0b509e 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3ac5c8', endColorstr='#0b509e', GradientType=1);
+}
+
+@media (max-width: 992px) {
+  .case-box {
+    margin-bottom: 30px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .case-box{
+    margin-bottom: 30px !important;
+  }
+}
+
+
+/* clients css */
+
+.clients_div {
+  padding: 20px 0px;
+}
+
+.clientv2 .client-box {
+  margin: 15px 0;
+  padding: 30px;
+  background-color: #f1f6f7;
+  border-radius: 4px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(226, 228, 229, 1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(226, 228, 229, 1);
+  box-shadow: 10px 10px 5px 0px rgba(226, 228, 229, 1);
+  position: relative;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.copybox img {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(226, 228, 229, 1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(226, 228, 229, 1);
+  box-shadow: 10px 10px 5px 0px rgba(226, 228, 229, 1);
+}
+
+.ebook-details:hover img,
+.clientv2 .client-box:hover {
+  -ms-transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+.client-box img {
+  opacity: 0.6;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.client-box img:hover {
+  opacity: 1;
+  filter: none;
+  -webkit-filter: none;
+}
+
+/* contact map css */
+
+.google-map {
+  position: relative;
+}
+
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  margin-top: auto;
+  position: absolute;
+}
+
+@media (max-width: 1024px) {
+  .google-map {
+    position: relative;
+    display: none;
+  }
+  .google-map iframe {
+    height: 150px;
+    width: 350px;
+    left: 0;
+    margin-top: auto;
+    position: absolute;
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .google-map {
+    position: relative;
+    display: none;
+  }
+  .google-map iframe {
+    height: 150px;
+    width: 350px;
+    left: 0;
+    margin-top: auto;
+    position: absolute;
+    display: none;
+  }
+}
