@@ -114,6 +114,13 @@ li {
   }
 }
 
+@media screen and (min-width: 766px) and (max-width: 768px){
+  .navbar-nav {
+    padding-left: 0;
+  }
+}
+
+
 /* ---------------------     News CSS   --------------------- */
 
 .news {
@@ -234,12 +241,6 @@ li {
   width: 500px;
 }
 
-@media screen and (max-width: 1024px) {
-  .google-map iframe {
-    width: 400px;
-  }
-}
-
 @media screen and (max-width: 640px) {
   .google-map iframe {
     width: 250px;
@@ -248,17 +249,19 @@ li {
   .contact_part {
     width: 100%; 
     float: none;
-    margin-top: 150px;
+    margin-top: 120px;
   }
   .copyright_part {
-    position: fixed;
     width: 100%;
     height: 60px;
     padding: 10px;
     font-size: 16px;
+    font-size: small;
   }
   .part2 {
     bottom: 0;
+    position: fixed;
+
   }
 }
 
@@ -280,17 +283,16 @@ li {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .google-map iframe {
+    width: 400px;
+  }
+}
+
 /* ---------------------     Client CSS   --------------------- */
 
 .client {
   margin: 100px;
-}
-
-@media screen and (max-width: 640px) { 
-  .client {
-    margin: 50px;
-    padding-top: 30px;
-  }
 }
 
 .client h2 {
@@ -326,6 +328,24 @@ li {
   width: 130px;
 }
 
+@media screen and (max-width: 640px) { 
+  .client {
+    margin: 50px;
+    padding-top: 30px;
+  }
+}
+
+@media screen and (min-width: 766px) and (max-width: 768px) {
+  .client .col-md-2{
+    max-width: 33%;
+  }
+}
+
+@media screen and (min-width: 1024px) { 
+  .client .col-md-2  {
+    max-width: 50%;
+  }
+}
 
 /* ---------------------     Carousel CSS   --------------------- */
 
@@ -364,7 +384,7 @@ li {
   }
 }
 
-@media screen and (max-width: 640px) and (orientation: landscape) {
+@media screen and (max-width: 640px)  and (max-width: 769px) and (max-width: 1024px){
   @keyframes moveSlideshow {
     100% { 
       transform: translateX(-100%);  
