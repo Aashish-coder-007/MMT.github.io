@@ -128,12 +128,13 @@ li {
 }
 
 .news ul>li {
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   line-height: 50px;
   font-size: 16px;
 }
 
 .news-top {
+  color: black;
   display: none;
 }
 
@@ -368,7 +369,7 @@ li {
 }
 
 .img-slideshow .mover {
-  animation: moveSlideshow 12s linear infinite;
+  animation: moveSlideshow 30s linear infinite;
 }
 
 .img-slideshow .mover:hover{
